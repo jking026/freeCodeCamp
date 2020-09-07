@@ -4,3 +4,7 @@ img {
   height: auto;
   margin: 0 auto;
 }
+
+button {
+  max-width: 5px;
+}
