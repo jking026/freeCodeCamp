@@ -13,21 +13,26 @@
 <body>
     <div id="main" class="container-fluid bg-light  p-md-3">
         <h1 id="title" class=" display-3s text-dark text-lg-center m-5">Customer Satisfaction Survey Form</h1>
+        <p id="description" class="description text-center">
+            Thank you for taking the time to help us improve the platform
+          </p>
         <div class="col-2">
             <div class="row-4">
-
+                
             </div>
         </div>  
     </div> 
     <!-- change to flush -->
     <div class="container-fluid  p-5">
-        <form class="needs-validation" novalidate> 
+        <form id="survey-form" class="needs-validation" novalidate> 
 <!--Name class-->            
-            <div id="survey-form" class="form-row">
+            <div class="form-row">
                 <div class="col-md-6 mb-3">
-                    <label id="name" for="validationDefault01" >First Name</label>
+                    <label id="name-label"
+                     for="name" >First Name</label>
                     <!--cross check if the was validated or is valid works better-->
-                    <input type="text" class="form-control" id="validationServer01" placeholder="First Name" value="" required>
+                    <input type="text" class="form-control" id="name" placeholder="First Name" value="" 
+                    required>
                     <div class="valid-feedback">
                         Cool name!
                     </div>
@@ -40,71 +45,82 @@
                     <input type="text" class="form-control" id="validationDefault02" placeholder="Last (Sur) name" value="" required>
                 </div>
             </div>  
+<!--Email Adress------>
+    <div class="form-group">
+      <label id="email-label" for="exampleDropdownFormEmail1">Email address</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="email@example.com" required>
+      <div class="valid-feedback">Cool name!</div>
+      <div class="invalid-feedback">Please enter a message in the text area.</div>
+    </div>
 <!--Address class------------------------------------>     
             <div class="form-row">
                 <div class="col-md-6 mb-3">
-                    <label for="validationDefault03" >City</label>
-                    <input type="text" class="form-control text" id="validationDefault03" placeholder="City" required>
+                    <label id=address for="city" >City</label>
+                    <input id="city" type="text" class="form-control text" id="validationDefault03" placeholder="City" required/>
+            </div> 
+
+            <div id="dropdown" class="mb-3">
+                <label for="validationDefault04">State</label>
+                <select class="custom-select" required >
+                    <option selected value="">Choose a State</option>
+                    <option value="">Alabama</option>
+                    <option value="">Alaska</option>
+                    <option value="">Arizona</option>
+                    <option value="">Arkansas</option>
+                    <option value="">California</option>
+                    <option value="">Colorado</option>
+                    <option value="">Connecticut</option>
+                    <option value="">Delaware</option>
+                    <option value="">Florida</option>
+                    <option value="">Georgia</option>
+                    <option value="">Hawaii</option>
+                    <option value="">Idaho</option>
+                    <option value="">Illinois</option>
+                    <option value="">Indiana</option>
+                    <option value="">Iowa</option>
+                    <option value="">Kansas</option>
+                    <option value="">Kentucky</option>
+                    <option value="">Louisiana</option>
+                    <option value="">Maine</option>
+                    <option value="">Maryland</option>
+                    <option value="">Massachusetts</option>
+                    <option value="">Michigan</option>
+                    <option value="">Minnesota</option>
+                    <option value="">Mississippi</option>
+                    <option value="">Missouri</option>
+                    <option value="">Montana</option>
+                    <option value="">Nebraska</option>
+                    <option value="">Nevada</option>
+                    <option value="">New Hampshire</option>
+                    <option value="">New Jersey</option>
+                    <option value="">New Mexico</option>
+                    <option value="">New York</option>
+                    <option value="">North Carolina</option>
+                    <option value="">North Dakota</option>
+                    <optio value="">Ohio</option>
+                    <optio value="">Oklahoma</option>
+                    <optio value="">Oregon</option>
+                    <optio value="">Pennsylvania</option>
+                    <option value="">Rhode Island</option>
+                    <option value="">South Carolina</option>
+                    <option value="">South Dakota</option>
+                    <option value="">Tennessee</option>
+                    <option value="">Texas</option>
+                    <option value="">Utah</option>
+                    <option value="">Vermont</option>
+                    <option value="">Virginia</option>
+                    <option value="">Washington</option>
+                    <option value="">West Virginia</option>
+                    <option value="">Wisconsin</option>
+                    <option value="">Wyoming</option>
+                    <option value="">Select one</option>
+                </select>
+                <div class="invalid-feedback">Choose please</div>
                 </div>
-                <div id="dropdown" class="col-md-3 mb-3">
-                    <label for="validationDefault04">State</label>
-                    <select class="custom-select" id="validationDefault04" placeholder="State" required>
-                        <option selected value="">Alabama</option>
-                        <option selected value="">Alaska</option>
-                        <option selected value="">Arizona</option>
-                        <option selected value="">Arkansas</option>
-                        <option selected value="">California</option>
-                        <option selected value="">Colorado</option>
-                        <option selected value="">Connecticut</option>
-                        <option selected value="">Delaware</option>
-                        <option selected value="">Florida</option>
-                        <option selected value="">Georgia</option>
-                        <option selected value="">Hawaii</option>
-                        <option selected value="">Idaho</option>
-                        <option selected value="">Illinois</option>
-                        <option selected value="">Indiana</option>
-                        <option selected value="">Iowa</option>
-                        <option selected value="">Kansas</option>
-                        <option selected value="">Kentucky</option>
-                        <option selected value="">Louisiana</option>
-                        <option selected value="">Maine</option>
-                        <option selected value="">Maryland</option>
-                        <option selected value="">Massachusetts</option>
-                        <option selected value="">Michigan</option>
-                        <option selected value="">Minnesota</option>
-                        <option selected value="">Mississippi</option>
-                        <option selected value="">Missouri</option>
-                        <option selected value="">Montana</option>
-                        <option selected value="">Nebraska</option>
-                        <option selected value="">Nevada</option>
-                        <option selected value="">New Hampshire</option>
-                        <option selected value="">New Jersey</option>
-                        <option selected value="">New Mexico</option>
-                        <option selected value="">New York</option>
-                        <option selected value="">North Carolina</option>
-                        <option selected value="">North Dakota</option>
-                        <option selected value="">Ohio</option>
-                        <option selected value="">Oklahoma</option>
-                        <option selected value="">Oregon</option>
-                        <option selected value="">Pennsylvania</option>
-                        <option selected value="">Rhode Island</option>
-                        <option selected value="">South Carolina</option>
-                        <option selected value="">South Dakota</option>
-                        <option selected value="">Tennessee</option>
-                        <option selected value="">Texas</option>
-                        <option selected value="">Utah</option>
-                        <option selected value="">Vermont</option>
-                        <option selected value="">Virginia</option>
-                        <option selected value="">Washington</option>
-                        <option selected value="">West Virginia</option>
-                        <option selected value="">Wisconsin</option>
-                        <option selected value="">Wyoming</option>
-                    </select>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="validationDefault05">Zip</label>
-                    <input type="text" class="form-control" id="validationDefault05" required>
-                </div>
+            </div>
+            <div class="form-group">
+                <label for="validationDefault05">Zip</label>
+                <input type="text" class="form-control" id="validationDefault05" required>
             </div>
 
 <!--Submit Button------------------------------->        
