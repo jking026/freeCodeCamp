@@ -8,6 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Custom style css -------->
+      <link href="/style.css">
 
     <title>Hopz Ball by Kong</title>
   </head>
@@ -15,7 +17,7 @@
 <!--Header section------------------>   
     <section>
       <header id="header">
-        <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav id="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <img id="header-img" src="https://www.kongcompany.com/img/kong-logo-red.png"  height="30" class="d-inline-block align-top" alt="">
 
         <a class="navbar-brand p-4" href="#">
@@ -67,8 +69,14 @@
               <img class="d-block w-100" src="https://9ed48207422fa7fc5013-a6297eb5ec0f30e883355c8680f3b2d6.ssl.cf2.rackcdn.com/PLB1%20(3)-20180905204454-20180905204700-1000x1000.jpg" alt="Product With Packaging">
             </div>
           </div>
-
-
+          <a class="carousel-control-prev" href="#ProductImagesCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#ProductImagesCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>  
     </section>
@@ -124,8 +132,8 @@
             </div>
           </div>
         </div>
-        <div id="video" class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/UurWZp4cXP0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div  class="embed-responsive embed-responsive-16by9">
+          <iframe id="video" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/UurWZp4cXP0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <br>
         <div class="d-flex flex-column align-items-center ">
@@ -147,7 +155,27 @@
 <!--Where to buy---------------------------->   
     <section> 
       <div id="WhereToBuy" class="container">
+        <div class="row-fluid ">
+          <div class="jumbotron jumbotron-fluid bg-light  ">
+            <div class="container">
+              <h1 class="display-3 text-center">Where to Buy</h1>
+            </div>
+          </div>
       </div>
+      <form>
+        <div class="form-group">
+          <label for="Email">Email address</label>
+          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">
+              We'll keep your information secure!
+            </small>
+            <div class="d-flex justify-content-center">
+              <a id="submit" href="https://www.freecodecamp.com/email-submit" class="btn btn-danger btn-active" role="button" aria-pressed="true">Submit</a>
+            </div> 
+        </div>
+ 
+
+      </form> 
     </section> 
 
 
