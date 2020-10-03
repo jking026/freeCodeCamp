@@ -41,3 +41,11 @@ header {
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+#navbar li {
+    color: #6c7bca;
+    padding: 10px 30px;
+    list-style: none;
+    position: relative
+    widows: 100%;
+}
