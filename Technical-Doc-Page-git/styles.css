@@ -3,10 +3,11 @@ html
 
 body {
     min-width: 290px;
-    color: cornsilk;
+    color: black;
     background-color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
+
 }
 
 #navbar {
@@ -18,7 +19,7 @@ body {
     height: 100%;
     border-right: solid;
     border-width: 15px;
-    border-color: currentColor;
+    border-color:cornsilk;
 }
 
 header {
@@ -34,3 +35,9 @@ header {
     margin: 0px;
 }
 
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
