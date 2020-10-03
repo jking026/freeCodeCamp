@@ -49,3 +49,11 @@ header {
     position: relative
     widows: 100%;
 }
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #6c7bca;
+    text-decoration: none;
+    cursor: pointer;
+}
