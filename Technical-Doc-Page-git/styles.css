@@ -20,3 +20,12 @@ body {
     border-width: 15px;
     border-color: currentColor;
 }
+
+header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+
+}
