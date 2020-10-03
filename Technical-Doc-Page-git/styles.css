@@ -93,7 +93,7 @@ code {
 @media only screen and (max-width: 815px) {
     /*For mobile phones*/
     #navbar ul {
-        border: 1px solid;
+        border: 2px solid;
         height: 207px;
     }
 
@@ -107,7 +107,7 @@ code {
         max-height: 275px;
         border: #6c7bca;
         z-index: 1;
-        border-bottom: 2px solid;
+        border-bottom: 2px dotted;
     }
 
     #main-doc {
