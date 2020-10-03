@@ -64,3 +64,13 @@ header {
     padding: 20px;
     margin-bottom: 110px;
 }
+
+section article {
+    color: #6c7bca;
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
