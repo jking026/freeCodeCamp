@@ -20,7 +20,7 @@ body {
     border-right: solid;
     border-width: 15px;
     border-color:cornsilk;
-    overflow: auto;
+ 
 }
 
 header {
@@ -109,7 +109,7 @@ code {
         border: #6c7bca;
         z-index: 1;
         border-bottom: 2px dotted;
-        overflow-y: scroll;
+
     }
 
     #main-doc {
@@ -121,12 +121,10 @@ code {
 @media only screen and (max-width: 400px) {
     #main-doc {
         margin-left: -10px;
-        margin-top: 270px;
+
     }
-    ::selection { 
-        margin-top: 216px;
-    }
-}
+
+
     code {
         margin-left: -20px;
         width: 100%;
