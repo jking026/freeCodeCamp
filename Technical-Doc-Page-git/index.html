@@ -223,42 +223,57 @@
         <section class="main-section" id="Git_committed">
             <header>Git Committed</header>
             <article>
-                <p>Introduction</p>
-                <ul>
-                    <li>
-                        <code></code>>
-                    </li>
-                    <p>Introduction</p>
-                    <li>
-                        Placeholder
-                    </li>
-                    <p>Introduction</p>
-                    <li>
-                        Placeholder
-                    </li>
-                    <p>Introduction</p>
-                </ul>
+                <p>
+                    Congrats, if you made it this far, then you are truly committed to git, so what now? 
+                </p>
+                <p>
+                    When you are making changes, keep in mind that each file in your working directory can be in one of two states: tracked or untracked.
+                </p>
+                <p class="text-dark h5"> 
+                    Tracked & Untracked files
+                </p>
+                <li>
+                    Tracked files are files that git knows about, while untracked are everything else mainly that are not in the staging area or the last snapshot.
+                </li>
+                <li>
+                    To check the status of your branch and its content use this:
+                </li>
+                <code>$ git status </code>
             </article>
         </section>
 
         <section class="main-section" id="Git_help">
             <header>Git Help</header>
             <article>
-                <p>Introduction</p>
+                <p>With the git status command you can check which branch you are in, if your files are tracked/untracked , staged or unstaged. </p>
                 <ul>
                     <li>
-                        <code></code>
+                        When you want <span class="text-danger">stage</span> a modified file use this command:
                     </li>
-                    <p>Introduction</p>
+                    <code>$ git add <file name> </code>
                     <li>
-                        Placeholder
+                        or to add all files
                     </li>
-                    <p>Introduction</p>
-                    <li>
-                        Placeholder
-                    </li>
-                    <p>Introduction</p>
+                    <code>$ git add . </code>
                 </ul>
+                <p>
+                    Once they are staged you must <span class="text-danger">commit</span> them to the head of the repository, but a message is mandatory, if you don’t add a message-git will automatically abort your commit.
+                </p>
+                <code>$ git commit -m “blah blah blah”</code>
+                <p class="h5 text-dark">
+                    Git Commit Etiquette
+                </p>
+                <p> It is highly recommended that you put some effort into your commit message.
+                </p>    
+                    <li>
+                        In fact, it shouldn’t be longer than 50 characters, but sometimes it cannot be helped than to add more. 
+                    </li>
+                    <li>
+                        There is an etiquette to writing a git commit -m and for more info checkout out:
+                    </li>
+                    <p class="mx-auto p-3 text-center">
+                        <a class="h4 text-center mx-auto p-5" href="https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/">FCC's "Writing Good Commit Messages a Practical Guide</a>
+                    </p> 
             </article>
         </section> 
         
