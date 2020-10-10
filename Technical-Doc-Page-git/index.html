@@ -99,10 +99,17 @@
         <section class="main-section" id="Git_on_the_downloads">
             <header>Git on the Downloads</header>
             <article>
-                <p>Depending on your OS there are a few ways to download git, but first follow the directions from the mother ship’s download page: </p>
+                <p>
+                    Depending on your OS there are a few ways to download git, but first follow the directions from the mother ship’s download page: 
+                </p>
+                <p class="mx-auto p-3 text-center">
+                    <a class="h4 text-center mx-auto p-5" href="https://git-scm.com/downloads">Git Download page</a>
+                </p>
                 <ul> 
-                    <p><a class="h4" href="https://git-scm.com/downloads">Git Download page</a></p>
-                    <p class="text-dark"> Linux (Ubuntu/Debian)</p>
+
+                    <p class="text-dark h5"> 
+                        Linux (Ubuntu/Debian)
+                    </p>
                      
                     <li>
                         First install: <span class="text-danger">install-info</span> package
@@ -124,20 +131,38 @@
         <section class="main-section" id="Git_setup">
             <header>Git Setup</header>
             <article>
-                <p>Introduction</p>
-                <ul>
+                <p>Customizing your git pathway will avoid hazardous confusion and random path errors. </p>
+                <p class="m-3 h"> 
+                    1. <span class="text-danger"> git config</span> - is a powerful way to set up your user identity such as: user.name, user.email, colors, etc.
+                </p>
+                <p class="m-3">
+                    2. Choose a location on your hard drive where you want to store git configuration, after use this command:
+                </p>
+                    <code>$ [path] etc/gitconfig</code>
+                <p class="m-3">
+                    For values specific personally to the user use this command instead:
+                </p>
+                <code>~/.gitconfig or ~/.config/git/config </code>
+                <p>
+                    Your <span class="text-danger">identity</span> is how anyone knows who did what, but this also helps track your work, just in case you need to revert something back to a prior state.
+                </p>
+                <ul> 
+                    <p class="text-dark h5"> 
+                        User.name
+                    </p>
                     <li>
-                        <code></code>>
+                        This will help identify yourself, although it would be advised to use your full name.
                     </li>
-                    <p>Introduction</p>
+                    <code>$ git config --global user.name "James Jeremiah King"</code>
+                    <p class="text-dark h5"> 
+                        User.email
+                    </p>
                     <li>
-                        Placeholder
+                        Next add the email you want associated with git. 
                     </li>
-                    <p>Introduction</p>
-                    <li>
-                        Placeholder
-                    </li>
-                    <p>Introduction</p>
+                    <code>$ git config --global user.email jamesjking@example.com</code>
+                    <p class="text-dark h5">Final step in git config is to checkout your settings:</p>
+                    <code>$ git config --list --show-origin</code>
                 </ul>
             </article>
         </section>
