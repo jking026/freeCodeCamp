@@ -1,18 +1,4 @@
-
-.bd-navbar {
-    text-decoration-color: darkmagenta;
-    background-color: darkslategray;
-}
-
-@media (max-width: 991.98px)
-.bd-navbar .navbar-nav-scroll {
-    max-width: 100%;
-    height: 2.5rem;
-    margin-top: .25rem;
-    overflow: hidden;
-}
-
-/* html
+html
 
 body {
     min-width: 290px;
@@ -33,6 +19,7 @@ body {
     border-right: solid;
     border-width: 15px;
     border-color:cornsilk;
+ 
 }
 
 header {
@@ -121,6 +108,7 @@ code {
         border: #6c7bca;
         z-index: 1;
         border-bottom: 2px dotted;
+
     }
 
     #main-doc {
@@ -132,8 +120,10 @@ code {
 @media only screen and (max-width: 400px) {
     #main-doc {
         margin-left: -10px;
-    }   
-}
+
+    }
+
+
     code {
         margin-left: -20px;
         width: 100%;
@@ -142,4 +132,4 @@ code {
         padding-right: 45px;
         min-width: 233px;
     }
-} */
+}
