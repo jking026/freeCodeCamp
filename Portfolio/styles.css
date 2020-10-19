@@ -2,3 +2,8 @@
 .navbar. .navbar-toggler-icon {
     background-image: url('/images/scarecrow.png');
 } */
+section .welcome-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(86, 165, 70);
+}
