@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--Custom CSS---------->
-    <link href="/styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <!---Custom JavaScript-->
     <link href="/JS.js">
 
@@ -17,7 +17,7 @@
   </head>
   <body>
     <!--Start of navbar-->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light  fixed-top">
         <a class="navbar-brand" href="#">About</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbar"aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
         </button>
@@ -26,13 +26,10 @@
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#welcome-section">About<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#Contact">Contact</a>
+                    <a class="nav-link" href="#contact-section">Contact</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#ShoutOuts">Shout Outs</a>
@@ -44,10 +41,12 @@
 
     <!--Start of Welcome Section---->
     <section id="welcome-section" class="col-md text-center py-5 mt-5">
-        <h1 class="row-sm">Hello I am James J. King</h1>
-        <p>
-            a web developer
-        </p>
+        <div class="jumbotron">
+            <h1 class="display-1">Hello I am James J. King</h1>
+            <p>
+                a web developer
+            </p>
+        </div>    
     </section>
     <!--End of Welcome Section-->
 
@@ -82,7 +81,7 @@
     <!--End of contact section-->
 
     <!--Start of Shout out section-->
-    <section id="#ShoutOuts" class="">
+    <section id="ShoutOuts" class="">
         <div class="">
 
         </div>
